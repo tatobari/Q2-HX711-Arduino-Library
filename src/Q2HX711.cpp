@@ -53,6 +53,12 @@ long Q2HX711::read() {
     digitalWrite(CLOCK_PIN, LOW);
   }
 
-  data[2] ^= 0x80;
-  return ((uint32_t) data[2] << 16) | ((uint32_t) data[1] << 8) | (uint32_t) data[0];
+  long value = ((uint32_t) data[2] << 16) | ((uint32_t) data[1] << 8) | (uint32_t) data[0];
+
+  if(data[2] & 0x80){
+    value ^= 1L << 23;
+    value ^= 1L << 31;
+  }
+
+  return value;
 }
