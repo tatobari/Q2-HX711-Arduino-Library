@@ -10,6 +10,8 @@ See the LICENSE file for licensing details.
 - [Two's Complement Part 1 - An Introduction](https://www.youtube.com/watch?v=9W67I2zzAfo)
 - [Two's Complement Part 2 - An Introduction](https://www.youtube.com/watch?v=Hof95YlLQk0)
 
+[bogde's HX711 repo](https://github.com/bogde/HX711/blob/master/HX711.cpp) has a very elegan a correct solution.
+
 A simple Arduino driver for the HX711 ADC.
 
 The HX711 is a low-cost strain gauge amplifier produced by Avia Semiconductor.  Breakout boards are available for it by many producers, including the [Sparkfun 13230](https://www.sparkfun.com/products/13230).
