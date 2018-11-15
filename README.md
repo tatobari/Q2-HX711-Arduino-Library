@@ -5,7 +5,10 @@ Forked from: [https://github.com/queuetue/Q2-HX711-Arduino-Library](https://gith
 Copyright (c) 2015 Scott Russell (scott@queuetue.com), released under the MIT license.  
 See the LICENSE file for licensing details.
 
-**Note:** Scott's version doesn't take into account the Two's Complement concept. It kind of ignores it with a workaround. In that library, there's a pull request from Sthing (#2) but his approach is incorrect.
+**Note:** Scott's version doesn't take into account the Two's Complement concept. It kind of ignores it with a workaround. In that library, there's a pull request from Sthing (#2) but his approach is incorrect. Check the HX711 Datasheet and then these two YouTube videos to understand why:
+
+- [Two's Complement Part 1 - An Introduction](https://www.youtube.com/watch?v=9W67I2zzAfo)
+- [Two's Complement Part 2 - An Introduction](https://www.youtube.com/watch?v=Hof95YlLQk0)
 
 A simple Arduino driver for the HX711 ADC.
 
