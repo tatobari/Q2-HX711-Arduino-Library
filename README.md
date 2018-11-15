@@ -5,14 +5,14 @@ Forked from: [https://github.com/queuetue/Q2-HX711-Arduino-Library](https://gith
 Copyright (c) 2015 Scott Russell (scott@queuetue.com), released under the MIT license.  
 See the LICENSE file for licensing details.
 
-**Note:** Scott's version doesn't take into account the Two's Complement concept. It kind of ignores it with a workaround. In that library, there's a pull request from Sthing (#2) but his approach is incorrect. Check the HX711 Datasheet and then these two YouTube videos to understand why:
+**Note:** Scott's version doesn't take into account the Two's Complement concept. It kind of ignores it with a workaround. In that library, there's a pull request from Sthing (#2) which implements a very elegant approach.
 
 - [Two's Complement Part 1 - An Introduction](https://www.youtube.com/watch?v=9W67I2zzAfo)
 - [Two's Complement Part 2 - An Introduction](https://www.youtube.com/watch?v=Hof95YlLQk0)
 
-[bogde's HX711 repo](https://github.com/bogde/HX711/blob/master/HX711.cpp) has a very elegan a correct solution.
+[bogde's HX711 repo](https://github.com/bogde/HX711/blob/master/HX711.cpp) is the approach I've finally chose.
 
-A simple Arduino driver for the HX711 ADC.
+## A simple Arduino driver for the HX711 ADC.
 
 The HX711 is a low-cost strain gauge amplifier produced by Avia Semiconductor.  Breakout boards are available for it by many producers, including the [Sparkfun 13230](https://www.sparkfun.com/products/13230).
 
@@ -22,17 +22,17 @@ This library provides the code required to use an Arduino, the HX711 module and 
 
 The library has a single class, **Q2HX711** with two functions.  
 
-## Class
+### Class
 The **Q2HX711** class takes two parameters on construction, the pin to use for data (output) and the pin to use to signal readiness (clock).
 
-## Functions
+### Functions
 
 Function  | Description
 ------------- | -------------
 **read**  | Returns a long integer that is the current value of the HX711
 **readyToSend**  | Returns a boolean indicating if the HX711 is prepared to send data.
 
-## Example
+### Example
 
 Here is a simple example of using the HX711 on pins A2 and A3 to read a strain gauge and print it's current value:
 
