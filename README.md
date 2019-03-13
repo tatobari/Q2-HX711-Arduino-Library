@@ -10,7 +10,7 @@ See the LICENSE file for licensing details.
 - [Two's Complement Part 1 - An Introduction](https://www.youtube.com/watch?v=9W67I2zzAfo)
 - [Two's Complement Part 2 - An Introduction](https://www.youtube.com/watch?v=Hof95YlLQk0)
 
-[bogde's HX711 repo](https://github.com/bogde/HX711/blob/master/HX711.cpp) is the approach I've finally chose.
+[bogde's HX711 repo](https://github.com/bogde/HX711/blob/master/HX711.cpp) is the approach I've finally chosen.
 
 ## A simple Arduino driver for the HX711 ADC.
 
